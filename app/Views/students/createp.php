@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <h1>Add Student</h1>
 <form action="/students/store" method="post">
     <label>Name:</label>
