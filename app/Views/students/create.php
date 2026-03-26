@@ -8,7 +8,7 @@
             <form action="/students/store" method="post">
                 <div class="mb-3">
                     <label class="form-label fw-bold">Name:</label>
-                    <input type="text" name="name" class="form-control" placeholder="Enter student's full name" required>
+                    <input type="text" name="name" class="form-control" required>
                 </div>
                 
                 <div class="mb-3">

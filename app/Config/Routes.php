@@ -15,4 +15,5 @@ $routes->get('/students/delete/(:num)', 'StudentController::delete/$1');
 $routes->get('/students/edit/(:num)', 'StudentController::edit/$1');
 $routes->post('/students/update/(:num)', 'StudentController::update/$1');
 
-$routes->get('/api/students', 'StudentApiController::index');
+$routes->get('/api/students', 'StudentApiController::index');  
+$routes->post('/students/store', 'StudentController::store');

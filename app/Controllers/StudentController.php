@@ -31,14 +31,17 @@ public function index()
         return view('students/create');
     }
 
-    public function store()
+public function store()
     {
-        $model = new StudentModel();
+        $model = new \App\Models\StudentModel();
+        
         $data = [
-            'name' => $this->request->getPost('name'),
-            'email' => $this->request->getPost('email'),
+            // Use getPost('fieldname') instead of $_POST['fieldname']
+            'name'   => $this->request->getPost('name'),
+            'email'  => $this->request->getPost('email'),
             'course' => $this->request->getPost('course'),
         ];
+        
         $model->insert($data);
         return redirect()->to('/students');
     }
