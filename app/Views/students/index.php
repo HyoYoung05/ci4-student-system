@@ -28,4 +28,5 @@
     </td>
 
     <?php endforeach; ?>
+    <?= $pager->links() ?>
 </table>

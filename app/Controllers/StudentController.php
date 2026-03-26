@@ -7,20 +7,21 @@ class StudentController extends BaseController
 public function index()
     {
         $model = new \App\Models\StudentModel();
-        
-        // Grab the search keyword from the URL (e.g., ?keyword=John)
         $keyword = $this->request->getVar('keyword');
 
         if ($keyword) {
-            // Filter the results if a keyword exists
+            // Add pagination to the search results
             $data['students'] = $model->like('name', $keyword)
                                       ->orLike('email', $keyword)
                                       ->orLike('course', $keyword)
-                                      ->findAll();
+                                      ->paginate(5); // Show 5 records per page
         } else {
-            // Otherwise, get all students
-            $data['students'] = $model->findAll();
+            // Add pagination to the default list
+            $data['students'] = $model->paginate(5); 
         }
+        
+        // Pass the pager object to the view
+        $data['pager'] = $model->pager;
 
         return view('students/index', $data);
     }
