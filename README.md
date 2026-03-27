@@ -1,9 +1,9 @@
 # CI4 Student System
 
-[cite_start]This repository contains a CodeIgniter 4 CRUD application developed for **Laboratory Exercise 4: C14 CRUD with Required Git Collaboration**[cite: 1, 2].
+This repository contains a CodeIgniter 4 CRUD application developed for **Laboratory Exercise 4: C14 CRUD with Required Git Collaboration.
 
 ## 🚀 System Features
-[cite_start]This system includes all the mandatory features required for the final system check [cite: 116-122]:
+This system includes all the mandatory features required for the final system check:
 * **Basic CRUD Functionality:** Create, Read, Update, and Delete student records.
 * **Search:** Filter students by name, email, or course.
 * **Pagination:** Limits the number of students displayed per page (5 per page).
@@ -12,7 +12,7 @@
 * **REST API:** A JSON-based API endpoint to fetch student data.
 
 ## 👥 Team Collaboration
-[cite_start]This project was built collaboratively using Git feature branches[cite: 7, 54]. 
+This project was built collaboratively using Git feature branches. 
 * **Student 1:** Basic CRUD (`feature-crud`)
 * **Student 2:** Search (`feature-search`)
 * **Student 3:** Pagination (`feature-pagination`)
